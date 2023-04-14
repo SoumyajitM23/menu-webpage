@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+}
+
+.b1, .b2, .b3{
+	background-color: gray;
+	border: 3px black solid;
+	padding: 30px 10px 10px;
+	margin:15px;
+	box-sizing: border-box;
+	position: relative;
+	}
+
+.pos{
+	position: absolute;
+    width: 80px;
+	top:-2px;
+	right: -2px;
+	padding: 3px;
+	text-align: center;
+	border: 3px black solid;
+	}
+
+.b1_child
+	{
+	background-color: pink;
+	}
+
+.b2_child
+	{
+	background-color: red;	
+	color: white;
+	}
+
+.b3_child
+	{
+	background-color: yellow;
+	}
+
+@media(min-width:0px) and (max-width:767px)
+{
+	.b1, .b2, .b3{
+		display: block;
+		width: 95%;
+	}
+}
+
+@media(min-width:768px) and (max-width:991px)
+{
+	.b1, .b2{
+	height: 190px;	
+	width: 47%;
+	}
+
+	.b1, .b2, .b3{
+	position: absolute;
+	}
+
+	.b1{
+		left: 0px;
+	}
+	.b2{
+		right: 0px;
+	}
+	.b3{
+		left: 0px;
+		top:290px;
+	}
+	
+}
+
+@media(min-width: 992px){
+
+	.b1, .b2, .b3{
+		float:left;
+		width: 30%;
+		height: 220px;
+	}
+
+}
